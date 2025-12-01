@@ -18,17 +18,17 @@ All colors MUST be HSL.
     --popover: 36 10% 14%;
     --popover-foreground: 0 0% 96%;
 
-    --primary: 15 100% 60%;
+    --primary: 311 59% 21%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 36 12% 18%;
-    --secondary-foreground: 0 0% 96%;
+    --secondary: 358 84% 52%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 36 8% 22%;
     --muted-foreground: 0 0% 60%;
 
-    --accent: 46 100% 62%;
-    --accent-foreground: 0 0% 10%;
+    --accent: 358 84% 52%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
@@ -46,13 +46,13 @@ All colors MUST be HSL.
     --grit: 0 0% 18%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 8%) 0%, hsl(36 15% 12%) 50%, hsl(0 0% 8%) 100%);
-    --gradient-accent: linear-gradient(90deg, hsl(15 100% 60%) 0%, hsl(46 100% 62%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 8%) 0%, hsl(311 40% 10%) 50%, hsl(0 0% 8%) 100%);
+    --gradient-accent: linear-gradient(90deg, hsl(311 59% 21%) 0%, hsl(358 84% 52%) 100%);
     --gradient-overlay: linear-gradient(180deg, transparent 0%, hsl(0 0% 8% / 0.8) 100%);
     
     /* Shadows & Effects */
-    --shadow-intense: 0 20px 60px -10px hsl(15 100% 60% / 0.4);
-    --shadow-glow: 0 0 40px hsl(15 100% 60% / 0.3);
+    --shadow-intense: 0 20px 60px -10px hsl(311 59% 21% / 0.5);
+    --shadow-glow: 0 0 40px hsl(311 59% 21% / 0.4);
     --shadow-card: 0 10px 30px -5px hsl(0 0% 0% / 0.5);
     
     /* Animations */
@@ -68,14 +68,14 @@ All colors MUST be HSL.
     --card-foreground: 0 0% 96%;
     --popover: 36 10% 14%;
     --popover-foreground: 0 0% 96%;
-    --primary: 15 100% 60%;
+    --primary: 311 59% 21%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 36 12% 18%;
-    --secondary-foreground: 0 0% 96%;
+    --secondary: 358 84% 52%;
+    --secondary-foreground: 0 0% 100%;
     --muted: 36 8% 22%;
     --muted-foreground: 0 0% 60%;
-    --accent: 46 100% 62%;
-    --accent-foreground: 0 0% 10%;
+    --accent: 358 84% 52%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
     --border: 36 8% 25%;
@@ -127,8 +127,8 @@ All colors MUST be HSL.
 @layer components {
   .hero-pattern {
     background-image: 
-      radial-gradient(circle at 20% 50%, hsl(15 100% 60% / 0.05) 0%, transparent 50%),
-      radial-gradient(circle at 80% 80%, hsl(46 100% 62% / 0.03) 0%, transparent 50%);
+      radial-gradient(circle at 20% 50%, hsl(311 59% 21% / 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, hsl(358 84% 52% / 0.05) 0%, transparent 50%);
   }
 
   .card-grit {
