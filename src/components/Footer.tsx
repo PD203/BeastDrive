@@ -8,8 +8,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="text-3xl font-display tracking-wider">
-              <span className="gradient-text">BEAST</span>
-              <span className="text-foreground">DRIVE</span>
+              <img
+      src="https://beastdrive.in/wp-content/uploads/2025/06/BeastDrive-Logo-web-3-04.png"
+      alt="BeastDrive Logo"
+      className="w-32 md:w-40 lg:w-48 h-auto object-contain"
+    />
             </div>
             <p className="text-muted-foreground font-body text-sm">
               India's premier adventure tribe. Earn your grit.
@@ -72,7 +75,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-center text-muted-foreground font-body text-sm">
-          <p>&copy; 2025 BeastDrive. All rights reserved. Tribe &gt; Ego.</p>
+          <p>&copy; 2025 BeastDrive. All rights reserved.</p>
         </div>
       </div>
     </footer>
