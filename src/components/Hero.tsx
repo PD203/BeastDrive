@@ -31,7 +31,7 @@ const Hero = () => {
       {/* Content */}
       <motion.div 
         style={{ opacity }}
-        className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center"
+        className="relative z-10 flex flex-col items-center justify-center h-full px-2 sm:px-6 text-center"
       >
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -40,7 +40,7 @@ const Hero = () => {
           className="max-w-5xl"
         >
           <motion.h1 
-            className="mb-6 px-4 py-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display tracking-wider bg-white/60 rounded"
+            className="mb-6 px-2 sm:px-4 py-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display tracking-wider bg-white/60 rounded"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -64,10 +64,10 @@ BeastDrive Is Here!</span>
             transition={{ duration: 0.6, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <Button className="btn-hero text-xl px-10 py-7 hover:border-[0.5px] hover:border-white">
+            <Button className="btn-hero text-xl px-6 sm:px-10 py-7 hover:border-[0.5px] hover:border-white">
               Resigter Now
             </Button>
-            <Button className="btn-her0 text-xl px-10 py-7 hover:border-[0.5px] hover:border-white">
+            <Button className="btn-her0 text-xl px-6 sm:px-10 py-7 hover:border-[0.5px] hover:border-white">
               Explore Events
             </Button>
           </motion.div>
@@ -78,19 +78,19 @@ BeastDrive Is Here!</span>
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="absolute bottom-12 left-0 right-0 flex flex-wrap justify-center gap-8 sm:gap-12 px-6"
+          className="absolute bottom-12 left-0 right-0 flex flex-wrap justify-center gap-8 sm:gap-12 px-2 sm:px-6"
         >
           <div className="text-center">
-            <div className="text-3xl sm:text-4xl font-display text-primary">250+</div>
-            <div className="text-sm sm:text-base font-body text-muted-foreground">Events Held</div>
+            <div className="text-3xl sm:text-4xl font-display text-primary">2M+</div>
+            <div className="text-sm sm:text-base font-body text-muted-foreground">Digital Reach</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl sm:text-4xl font-display text-accent">₹2.5Cr+</div>
-            <div className="text-sm sm:text-base font-body text-muted-foreground">Prizes Won</div>
+            <div className="text-3xl sm:text-4xl font-display text-accent">80%</div>
+            <div className="text-sm sm:text-base font-body text-muted-foreground">Audience Aged 21-40</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl sm:text-4xl font-display text-primary">15K+</div>
-            <div className="text-sm sm:text-base font-body text-muted-foreground">Members</div>
+            <div className="text-3xl sm:text-4xl font-display text-primary">20K+</div>
+            <div className="text-sm sm:text-base font-body text-muted-foreground">Website visits</div>
           </div>
         </motion.div>
        

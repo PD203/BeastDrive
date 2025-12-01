@@ -12,7 +12,7 @@ const Partners = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-card">
+    <section className="py-20 px-2 sm:px-6 bg-card">
       <div className="container mx-auto">
         {/* Partners */}
         <motion.div

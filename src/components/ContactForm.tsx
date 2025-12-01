@@ -22,7 +22,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="py-20 px-6 bg-card">
+    <section className="py-20 px-2 sm:px-6 bg-card">
       <div className="container mx-auto max-w-3xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

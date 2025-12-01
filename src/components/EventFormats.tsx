@@ -34,7 +34,7 @@ const EventFormats = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-background">
+    <section className="py-20 px-2 sm:px-6 bg-background">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

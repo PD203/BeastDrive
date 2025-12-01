@@ -35,7 +35,7 @@ const Navigation = () => {
         isScrolled ? "bg-primary/95 backdrop-blur-lg border-b border-border shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-2 sm:px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
 <Link to="/" className="flex items-center">
@@ -85,7 +85,7 @@ const Navigation = () => {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-card border-t border-border"
           >
-            <div className="container mx-auto px-6 py-6 space-y-4">
+            <div className="container mx-auto px-2 sm:px-6 py-6 space-y-4">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
