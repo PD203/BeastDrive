@@ -1,9 +1,16 @@
 import { motion } from "framer-motion";
 import Hero from "@/components/Hero";
 import Navigation from "@/components/Navigation";
+import Features from "@/components/Features";
 import EventCard from "@/components/EventCard";
+import EventFormats from "@/components/EventFormats";
 import PrizeCard from "@/components/PrizeCard";
+import SafetySection from "@/components/SafetySection";
 import TestimonialCard from "@/components/TestimonialCard";
+import Gallery from "@/components/Gallery";
+import Partners from "@/components/Partners";
+import Location from "@/components/Location";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
 import eventObstacle from "@/assets/event-obstacle.jpg";
@@ -68,6 +75,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <Hero />
+      <Features />
 
       {/* Upcoming Events Section */}
       <section className="py-20 px-6 bg-background">
@@ -94,6 +102,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <EventFormats />
 
       {/* Prizes Section */}
       <section id="prizes" className="py-20 px-6 bg-card">
@@ -133,6 +143,8 @@ const Index = () => {
         </div>
       </section>
 
+      <SafetySection />
+
       {/* Testimonials Section */}
       <section className="py-20 px-6 bg-background">
         <div className="container mx-auto">
@@ -159,6 +171,9 @@ const Index = () => {
         </div>
       </section>
 
+      <Gallery />
+      <Partners />
+
       {/* CTA Section */}
       <section className="py-32 px-6 bg-gradient-to-b from-card to-background hero-pattern relative overflow-hidden">
         <motion.div
@@ -183,6 +198,9 @@ const Index = () => {
           </motion.button>
         </motion.div>
       </section>
+
+      <Location />
+      <ContactForm />
 
       <Footer />
     </div>
