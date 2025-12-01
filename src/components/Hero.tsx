@@ -40,12 +40,13 @@ const Hero = () => {
           className="max-w-5xl"
         >
           <motion.h1 
-            className="mb-6 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-display tracking-wider text-shadow-glow"
+            className="mb-6 px-4 py-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display tracking-wider bg-white/60 rounded"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <span className="gradient-text">EARN YOUR GRIT.</span>
+            <span className="gradient-text">India's First-Ever
+BeastDrive Is Here!</span>
           </motion.h1>
 
           <motion.p
@@ -54,7 +55,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="mb-12 text-xl sm:text-2xl md:text-3xl font-body font-light text-foreground/90 max-w-3xl mx-auto"
           >
-            High-octane obstacle races, convoys, and prizes — mud, fire, grit, and a tribe that backs you.
+           10 Days - 3500 KM - 25 Cars - 1 Chance to Make History.
           </motion.p>
 
           <motion.div
@@ -63,11 +64,11 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <Button className="btn-hero text-xl px-10 py-7">
-              Join the Next Run
+            <Button className="btn-hero text-xl px-10 py-7 hover:border-[0.5px] hover:border-white">
+              Resigter Now
             </Button>
-            <Button className="btn-secondary text-xl px-10 py-7">
-              See Prizes & Route
+            <Button className="btn-her0 text-xl px-10 py-7 hover:border-[0.5px] hover:border-white">
+              Explore Events
             </Button>
           </motion.div>
         </motion.div>
@@ -89,24 +90,11 @@ const Hero = () => {
           </div>
           <div className="text-center">
             <div className="text-3xl sm:text-4xl font-display text-primary">15K+</div>
-            <div className="text-sm sm:text-base font-body text-muted-foreground">Tribe Members</div>
+            <div className="text-sm sm:text-base font-body text-muted-foreground">Members</div>
           </div>
         </motion.div>
-
-        {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.2 }}
-          className="absolute bottom-4 left-1/2 transform -translate-x-1/2"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          >
-            <IconChevronDown className="w-8 h-8 text-primary" />
-          </motion.div>
-        </motion.div>
+       
+        
       </motion.div>
     </section>
   );

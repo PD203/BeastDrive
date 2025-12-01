@@ -67,7 +67,7 @@ const EventFormats = () => {
                 {format.description}
               </p>
               <div className="flex flex-wrap gap-4 text-sm font-body">
-                <div className="px-3 py-1 bg-primary/20 text-primary rounded-full border border-primary/30">
+                <div className="px-3 py-1 bg-white/70 text-primary rounded-full border border-primary/30">
                   {format.difficulty}
                 </div>
                 <div className="px-3 py-1 bg-accent/20 text-accent rounded-full border border-accent/30">

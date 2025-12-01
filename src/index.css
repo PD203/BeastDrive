@@ -143,15 +143,11 @@ All colors MUST be HSL.
     box-shadow: var(--shadow-glow);
   }
 
-  .btn-hero:hover {
-    @apply scale-105;
-    box-shadow: var(--shadow-intense);
-  }
 
   .btn-secondary {
     @apply px-8 py-4 font-display text-lg tracking-wider;
     @apply bg-secondary text-secondary-foreground border-2 border-border rounded-lg;
-    @apply transition-all duration-300 hover:border-primary hover:bg-secondary/80;
+    @apply transition-all duration-300;
   }
 }
 

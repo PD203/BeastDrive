@@ -22,35 +22,21 @@ import prizeBMW from "@/assets/prize-bmw.jpg";
 const Index = () => {
   const upcomingEvents = [
     {
-      title: "BEAST BASH: OBSTACLE FURY",
-      date: "March 15, 2025",
-      location: "Lonavala, Maharashtra",
-      prize: "₹10 Lakh + Jeep Wrangler",
+      title: "The Survival Run",
+      date: "August 1st, 2026",
+      location: "India",
       image: eventObstacle,
-      difficulty: "Advanced" as const,
+      prize: 5500,
     },
-    {
-      title: "HIMALAYAN DRIVE CONQUEST",
-      date: "April 20, 2025",
-      location: "Manali, Himachal Pradesh",
-      prize: "₹8 Lakh + Mahindra Thar",
-      image: eventDrive,
-      difficulty: "Intermediate" as const,
-    },
-    {
-      title: "WARRIOR CHALLENGE: BEGINNER",
-      date: "May 5, 2025",
-      location: "Bangalore, Karnataka",
-      prize: "₹3 Lakh + Gold Vouchers",
-      image: eventObstacle,
-      difficulty: "Beginner" as const,
-    },
+    
   ];
 
   const prizes = [
     { title: "Jeep Wrangler", image: prizeJeep, value: "₹60 Lakh" },
     { title: "Mahindra Thar", image: prizeThar, value: "₹18 Lakh" },
-    { title: "BMW Adventure Bike", image: prizeBMW, value: "₹25 Lakh" },
+    { title: "Adventure Bike", image: prizeBMW, value: "₹25 Lakh" },
+    { title: "Macbook", image: "https://5.imimg.com/data5/SELLER/Default/2024/10/456578648/VA/XV/MN/76006626/mackbook-pro-500x500.jpg", value: "₹25 Lakh" },
+    { title: "Gold Voucher", image: "https://img.freepik.com/free-vector/golden-gift-voucher-templates_52683-52750.jpg?semt=ais_hybrid&w=740&q=80", value: "₹25 Lakh" },
   ];
 
   const testimonials = [
@@ -75,7 +61,8 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <Hero />
-      <Features />
+      
+       <Gallery />
 
       {/* Upcoming Events Section */}
       <section className="py-20 px-6 bg-background">
@@ -90,9 +77,7 @@ const Index = () => {
             <h2 className="text-5xl sm:text-6xl md:text-7xl font-display tracking-wider mb-4">
               <span className="gradient-text">UPCOMING EVENTS</span>
             </h2>
-            <p className="text-xl text-muted-foreground font-body max-w-2xl mx-auto">
-              Choose your challenge. Earn your rewards. Join the tribe.
-            </p>
+           
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -104,6 +89,8 @@ const Index = () => {
       </section>
 
       <EventFormats />
+
+      <Features />
 
       {/* Prizes Section */}
       <section id="prizes" className="py-20 px-6 bg-card">
@@ -129,21 +116,11 @@ const Index = () => {
             ))}
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-center mt-12"
-          >
-            <p className="text-lg text-muted-foreground font-body mb-6">
-              + Gold Vouchers • MacBooks • Gear Kits • Cash Prizes
-            </p>
-          </motion.div>
+
         </div>
       </section>
 
-      <SafetySection />
+      
 
       {/* Testimonials Section */}
       <section className="py-20 px-6 bg-background">
@@ -171,36 +148,11 @@ const Index = () => {
         </div>
       </section>
 
-      <Gallery />
-      <Partners />
+     
+     
 
-      {/* CTA Section */}
-      <section className="py-32 px-6 bg-gradient-to-b from-card to-background hero-pattern relative overflow-hidden">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="container mx-auto text-center relative z-10"
-        >
-          <h2 className="text-5xl sm:text-6xl md:text-8xl font-display tracking-wider mb-6">
-            <span className="gradient-text">READY TO EARN IT?</span>
-          </h2>
-          <p className="text-2xl text-foreground/90 font-body mb-12 max-w-3xl mx-auto">
-            Join 15,000+ adventurers. Push your limits. Win epic prizes. Be part of the tribe.
-          </p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="btn-hero text-2xl px-16 py-8 shadow-2xl"
-          >
-            JOIN THE TRIBE
-          </motion.button>
-        </motion.div>
-      </section>
-
-      <Location />
-      <ContactForm />
+      
+     
 
       <Footer />
     </div>

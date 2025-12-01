@@ -25,9 +25,7 @@ const PrizeCard = ({ title, image, value, index }: PrizeCardProps) => {
             alt={title}
             className="w-full h-full object-contain p-6 transition-transform duration-500 group-hover:scale-110"
           />
-          <div className="absolute top-4 left-4 bg-accent text-accent-foreground px-4 py-2 rounded-lg font-display text-xl">
-            {value}
-          </div>
+          
         </div>
         <div className="p-6 text-center">
           <h3 className="text-2xl font-display tracking-wide text-foreground group-hover:text-primary transition-colors">

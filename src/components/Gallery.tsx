@@ -7,10 +7,10 @@ const Gallery = () => {
   const images = [
     { src: eventObstacle, title: "Obstacle Fury" },
     { src: eventDrive, title: "Himalayan Drive" },
-    { src: heroImage, title: "Beast Bash" },
-    { src: eventObstacle, title: "Warrior Challenge" },
-    { src: eventDrive, title: "Desert Storm" },
-    { src: heroImage, title: "Coastal Run" },
+    { src: "https://media.licdn.com/dms/image/v2/C4D12AQHIJH5az2ERPA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1520042369373?e=1765411200&v=beta&t=Ok80kmCJ3YW4ItsktbVwu0uyV8g3UIDvPvRZ8Etmucc", title: "Beast Bash" },
+    { src: "https://hips.hearstapps.com/hmg-prod/images/august-2023-brandenburg-klaistow-several-participants-news-photo-1706292808.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=640:*", title: "Warrior Challenge" },
+    { src: "https://strongviking.com/wp-content/uploads/2024/05/water_Berlin_1_Wilco_lamrs-1769-scaled-1-1024x683.jpg.webp", title: "Desert Storm" },
+    { src: "https://res.cloudinary.com/manawa/image/private/f_auto,c_limit,w_3840,q_auto/y5bpxssnrinkm3ho7k4j", title: "Coastal Run" },
   ];
 
   return (
@@ -24,7 +24,7 @@ const Gallery = () => {
           className="text-center mb-16"
         >
           <h2 className="text-5xl sm:text-6xl md:text-7xl font-display tracking-wider mb-4">
-            <span className="gradient-text">HIGHLIGHTS REEL</span>
+            <span className="gradient-text">HIGHLIGHTS</span>
           </h2>
           <p className="text-xl text-muted-foreground font-body max-w-2xl mx-auto">
             Witness the grit, the mud, the victory. This is what tribe looks like.

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { IconCalendar, IconMapPin, IconTrophy } from "@tabler/icons-react";
+import { IconCalendar, IconMapPin} from "@tabler/icons-react";
+import { BsCurrencyRupee } from "react-icons/bs";
 
 interface EventCardProps {
   title: string;
@@ -55,13 +56,13 @@ const EventCard = ({ title, date, location, prize, image, difficulty, index }: E
             <span className="font-body text-sm">{location}</span>
           </div>
           <div className="flex items-center gap-2">
-            <IconTrophy size={18} className="text-accent" />
+            <BsCurrencyRupee size={18} className="text-accent" />
             <span className="font-body text-sm font-semibold">{prize}</span>
           </div>
         </div>
 
         <Button className="w-full btn-hero">
-          Register Now
+          View Event
         </Button>
       </div>
     </motion.div>

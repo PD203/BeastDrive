@@ -10,7 +10,7 @@ const Features = () => {
     },
     {
       icon: IconUsers,
-      title: "Tribe Community",
+      title: "Community",
       description: "Join 15,000+ adventurers. Build lifelong bonds through shared challenges.",
     },
     {
@@ -20,8 +20,8 @@ const Features = () => {
     },
     {
       icon: IconMapPin,
-      title: "Pan-India Events",
-      description: "From Himalayan peaks to coastal beaches—adventure across 12 states.",
+      title: "South-India Events",
+      description: "From peaks to coastal regions adventure across 5 city.",
     },
   ];
 
